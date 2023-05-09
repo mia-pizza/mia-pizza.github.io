@@ -1,0 +1,244 @@
+
+														
+/*body*/
+body{
+	   /* para colocar una imagen de fondo*/
+	background-image:url("../imagenes/fondo4.jpg");
+	  /* Para que no se repita la imagen*/
+	background-repeat: no-repeat;
+	  /* Para ajustar el tamaño de la imagen*/
+	background-size: 100% 100% ;
+	/* color de fondo de la pagina*/
+	/* background-color: #D6EAFR8,*/
+	/*font-family es tipo de letra*/
+	font-family: fuente2; 
+	/*font size es para el tamaño se expresa en pixeles*/
+	font-size:50px;
+	/*color de las letras, su valor es hexadecimal*/
+	color: #1C2833;
+}
+hr{
+	/*border es para la linea tamaño en pixeles, tipo de linea y color*/
+	border: 5px solid #D35400;
+	/*es el terminado de las orillas y se expresa en pixeles*/
+    border-radius: 5px; 
+	border-width: 80%;
+}
+p{
+	/*text align se utiliza para alinearel texto */
+	text-align:justify;
+	font-size:10px;
+	font-family:fuente2;
+	color: #1C2833;
+}
+table,td,tr{
+	/*linea de grosor y tipo de linea*/
+	border:3px solid;
+	/*color de la linea*/
+	border-color:#20176D;
+	/*alineacion del texto*/
+	text-align:center;
+	/*color de fondo*/
+	background-color:#F0EADE;
+	font-family:fuente2;
+}
+th{
+	background-color:white;
+}
+ul{
+	/*indica el tipo de viñeta, en este caso circulo, puede ser tambien un cuadrado*/
+	list-style-type:circle;
+	list-style-position:inside;
+}
+ol{
+	/*algunos de los valores de list-style-type son: lower-alpha, lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f  i,ii,iii,iv  A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+.pie{
+	text-align:center;
+	font-size:20px;
+	color:#00000;
+	font-family: fuente2;
+	font-weight:bold ;
+}
+.table-text{
+	font-size: 20px;
+	font-family:arial;
+	color:Black;
+	
+}
+.title-text{
+	font-size:40px;
+	color:#00000;
+	font-weight:bold;
+	text-align:center;
+	font-family:mifuente;
+}
+.marquesina{
+	width:450px;
+	height:450px;
+	border-radius:15%;
+}
+.botones{
+	border-radius:120px;
+	width:120px;
+	height:100px;
+}
+.img-tablas{
+	width:155px;
+	height:155px;
+}
+.img-otras{
+	width:450px;
+	height:450px;
+	border-radius:450px;
+	border:5px solid #000000;
+}	
+@font-face{
+	font-family: mifuente;
+	src: url("../fuentes/SimpleThread.otf");
+}
+@font-face{
+	font-family: fuente2;
+	src: url("../fuentes/Zawtturee.ttf");
+}
+.fuentedegoogle{
+	/*es para el tipo de letra ccesible sin necesidad de internet y para llamarlo es en <p class="fuente de google">*/
+	font-family: 'Bitter', serif;
+}
+/*uso de divs*/
+/*Div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding: 0px;
+}
+div#top{
+	width:100%;
+	height: 100px;
+	background-image:linear-gradient(#A04000,#D68910);
+}
+div#principal{
+	margin:auto;
+	margin-top: 10px;
+	width:100%;
+	height:500px;
+	background-image:radial-gradient(#E6B0AA,#FEF9E7);
+}
+div#piep{
+	margin-top: 10px;
+	width:100%;
+	height:80px;
+	background-image: url("../imagenes/fondo4.jpg");
+}
+div#primero{
+	margin:auto;
+	margin-top: 10px;
+	width:90%;
+	background-image:radial-gradient(#E6B0AA,#FEF9E7);
+}
+div#pp{
+	margin:auto;
+	margin-top: 20px;
+	width:80%;
+	height:780px;
+	background-image:radial-gradient(#E6B0AA,#FEF9E7);
+}
+.caja{
+	height:300px;
+	width:200px;
+	background:#eee;
+	border:1px solid #eee;
+	margin:5px;
+	color:black;
+	text-align: center;
+	display:inline-block;
+	
+}
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px; 
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.textop{
+	width:400px;
+	background-image: linear-gradient(#1ABC9C,#1ABC9C);
+	font-size:20px;
+	color:black;
+}
+.menu{
+	height:100px;
+	width:100px;
+	background-image:radial-gradient;
+	margin:5px;
+	color:black;
+	text-align: center;
+	display:inline-block;
+	
+}
+.menu:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
